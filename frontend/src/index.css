@@ -1,0 +1,153 @@
+html, body, #root {
+  min-height: 100%;
+}
+
+body {
+  margin: 0;
+  background: #f8f9fa;
+  font-family: Arial, Helvetica, sans-serif;
+}
+
+#root {
+  min-height: 100vh;
+  display: flex;
+  flex-direction: column;
+}
+
+main {
+  flex: 1;
+}
+
+.hero {
+  min-height: 280px;
+  position: relative;
+  background-image:
+    linear-gradient(rgba(0, 0, 0, 0.62), rgba(0, 0, 0, 0.62)),
+    url("https://images.pexels.com/photos/14590497/pexels-photo-14590497.jpeg?auto=compress&dpr=1&h=750&w=1260");
+  background-size: cover;
+  background-position: center;
+}
+
+.hero h1 {
+  font-weight: 700;
+  font-size: clamp(2rem, 5vw, 3rem);
+}
+
+.hero p {
+  margin-bottom: 0;
+  font-size: 1rem;
+}
+
+.pizza-card {
+  border: 1px solid #ddd;
+  transition: transform 0.2s ease;
+}
+
+.pizza-card:hover {
+  transform: translateY(-3px);
+}
+
+.pizza-image {
+  height: 210px;
+  object-fit: cover;
+}
+
+.cart-page {
+  width: 100%;
+}
+
+.cart-container {
+  max-width: 760px;
+  background: #fff;
+  padding: 2rem;
+  border-radius: 12px;
+  box-shadow: 0 2px 14px rgba(0, 0, 0, 0.08);
+}
+
+.cart-item {
+  min-height: 54px;
+}
+
+.cart-image {
+  width: 76px;
+  height: 48px;
+  object-fit: cover;
+  border-radius: 5px;
+}
+
+.cart-price {
+  min-width: 85px;
+  text-align: right;
+}
+
+.quantity-button {
+  width: 34px;
+  font-weight: 700;
+}
+
+.quantity {
+  min-width: 18px;
+  text-align: center;
+}
+
+footer {
+  font-size: 0.9rem;
+}
+
+.form-page {
+  flex: 1;
+}
+
+.form-container {
+  max-width: 760px;
+  margin: 0 auto;
+}
+
+.form-container h1 {
+  margin-bottom: 1.5rem;
+}
+
+@media (max-width: 576px) {
+  .cart-container {
+    padding: 1rem;
+  }
+
+  .cart-item {
+    gap: 0.5rem !important;
+    flex-wrap: wrap;
+  }
+
+  .cart-image {
+    width: 62px;
+  }
+
+  .cart-price {
+    min-width: auto;
+  }
+}
+
+.pizza-detail-image {
+  width: 100%;
+  max-height: 430px;
+  object-fit: cover;
+}
+
+.app-shell {
+  min-height: 100vh;
+  display: flex;
+  flex-direction: column;
+}
+
+.profile-card,
+.not-found-card {
+  max-width: 620px;
+}
+
+.profile-page,
+.not-found-page {
+  width: 100%;
+}
+
+.navbar .btn {
+  text-decoration: none;
+}

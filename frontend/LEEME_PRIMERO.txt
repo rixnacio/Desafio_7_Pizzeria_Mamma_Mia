@@ -1,0 +1,17 @@
+HITO 7 - PIZZERIA MAMMA MIA
+
+Este frontend se ejecuta por separado del backend.
+
+1. Abre una terminal en esta carpeta (frontend).
+2. Ejecuta: npm install
+3. Ejecuta: npm run dev
+4. Abre en el navegador la URL que indique Vite.
+
+Para probar las rutas protegidas:
+- La aplicación inicia con token=true: aparecen Home, Profile y Logout.
+- Presiona Logout: el token cambia a false y aparecen Login y Register.
+- Con token=false, intenta entrar a /profile: debe redirigir a /login.
+- Con token=false, intenta entrar a /login o /register después de iniciar sesión: debe redirigir a Home.
+- En el carrito, con token=false, el botón Pagar queda deshabilitado.
+
+Recuerda mantener el backend encendido en http://localhost:5000 para cargar las pizzas.
